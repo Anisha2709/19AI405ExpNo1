@@ -4,9 +4,8 @@
 ### Register Number: 212224040023
 
 ## AIM:
-<br>
 <p>To find the PEAS description for the given AI problem and develop an AI agent.</p>
-<br>
+
 
 ## Theory
 <h3>Medicine prescribing agent:</h3>
