@@ -40,3 +40,45 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+
+## PROGRAM
+```
+import random
+
+class MedicinePrescribingAgent:
+    def __init__(self):
+        self.environment = {
+            'A': round(random.uniform(97.0, 103.0), 1),
+            'B': round(random.uniform(97.0, 103.0), 1)
+        }
+        self.location = 'A'
+        self.performance = 0
+
+    def run(self, steps=4):
+        for _ in range(steps):
+            temp = self.environment[self.location]
+            
+            if temp > 98.5:
+                print(f"Room {self.location}: Temp {temp}°F -> Prescribing Medicine")
+                self.environment[self.location] = 98.0
+                self.performance += 10
+            else:
+                print(f"Room {self.location}: Temp {temp}°F -> Healthy")
+
+            self.location = 'B' if self.location == 'A' else 'A'
+            self.performance -= 1
+
+        print("Final Performance:", self.performance)
+
+if __name__ == "__main__":
+    agent = MedicinePrescribingAgent()
+    agent.run()
+```
+
+## OUTPUT
+<img width="1857" height="696" alt="image" src="https://github.com/user-attachments/assets/e608cdc5-d7b3-4abf-b248-bc5f25d68dab" />
+
+
+## RESULT
+Thus, the PEAS description for the Medicine Prescribing AI Agent was successfully formulated, and the Python program simulating the agent's perception, action, and performance evaluation was implemented and executed successfully.
+
