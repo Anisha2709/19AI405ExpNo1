@@ -1,6 +1,6 @@
 <h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
-<h3>Name: DHANUSH R</h3>
-<h3>Register Number: 212224060060</h3>
+<h3>Name: ANISHA V</h3>
+<h3>Register Number: 212224040023</h3>
 
 
 <h3>AIM:</h3>
